@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def run_ead_app() : 
+def run_eda_app() : 
     st.subheader('데이터 분석')
 
     df = pd.read_csv('data/diabetes.csv')
