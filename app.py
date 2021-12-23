@@ -1,9 +1,11 @@
-import streamlit as streamlit
+import streamlit as st
 import numpy as numpy
 import pandas as pandas
 import matplotlib.pyplot as pyplot
 import seaborn as sns
 import joblib
+from eda_app import run_eda_app
+from ml_app import run_ml_app
 
 def main() :
     menu = [' 홈', '데이터분석', '인공지능']
@@ -14,7 +16,7 @@ def main() :
         st.subheader('당뇨병 데이터 분석 및 예측')
 
     elif choice == '데이터분석' :
-        run_ead_app()
+        run_eda_app()
 
     elif choice == '인공지능' :
         run_ml_app()

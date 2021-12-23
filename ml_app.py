@@ -8,7 +8,7 @@ def run_ml_app() :
     classifier = joblib.load('data/best_model.pkl')
     scaler_X = joblib.load('data/scaler_X.pkl')
 
-    sb.subheader('데이터를 입력하면 당뇨병을 예측!')
+    st.subheader('데이터를 입력하면 당뇨병을 예측!')
 
     # Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age
 
