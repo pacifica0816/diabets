@@ -1,14 +1,15 @@
 import streamlit as st
-import numpy as numpy
-import pandas as pandas
-import matplotlib.pyplot as pyplot
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
+
 from eda_app import run_eda_app
 from ml_app import run_ml_app
 
-def main() :
-    menu = [' 홈', '데이터분석', '인공지능']
+def main():
+    menu = ['홈', '데이터분석', '인공지능']
 
     choice = st.sidebar.selectbox('메뉴 선택', menu)
 
@@ -21,8 +22,6 @@ def main() :
     elif choice == '인공지능' :
         run_ml_app()
 
-    
 if __name__ == '__main__' :
     main()
 
-    
